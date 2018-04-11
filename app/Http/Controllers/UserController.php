@@ -24,6 +24,7 @@ class UserController extends Controller
         //return $this->middleware('checkAge');
         return 'test >> '.$id;
 
+
         //return view('user.profile', ['user' => User::findOrFail($id)]);
     }
 }
