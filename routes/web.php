@@ -21,4 +21,12 @@ Route::get('go/{i}', function($i){
 
 Route::redirect('res', 'there', 301);
 
-Route::view('/welcome', 'welcome');
+Route::view('/welcome', 'welcome', ['name' => 'Taylor']);
+
+Route::domain('{account}.blog.test')->group(function () {
+    Route::get('user/{id}', function ($account, $id) {
+        return $account.' / '.$id;
+    });
+});
+
+Route::get('user/{id}', 'UserController@show');
