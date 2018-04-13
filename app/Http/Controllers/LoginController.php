@@ -12,7 +12,7 @@ use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class LoginController extends Controller
 {
     /**
      * Show the profile for the given user.
@@ -20,13 +20,13 @@ class UserController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function show($id,Request $request)
+    public function __construct()
     {
-        //return $this->middleware('checkAge');
-        $url = $request->all();
-        return 'test >> '.$id.' >> '.$url;
 
-
-        //return view('user.profile', ['user' => User::findOrFail($id)]);
     }
+
+    public function index(){
+        return view('login');
+    }
+
 }

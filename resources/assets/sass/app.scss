@@ -8,7 +8,20 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// font-awesome
+$fa-font-path: "../fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+
+// bootstrap
+//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+.bg-cover{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
