@@ -27,6 +27,7 @@ class UserController extends Controller
         return 'test >> '.$id.' >> '.$url;
 
 
+
         //return view('user.profile', ['user' => User::findOrFail($id)]);
     }
 }
