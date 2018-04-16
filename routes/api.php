@@ -17,6 +17,7 @@ Route::post('login','LoginsController@login');
 //Route::get('login','LoginsController@login');
 Route::get('garageregisters/admin/list/{statusid}', 'GarageregisterController@admin_list');
 Route::post('garageregisters/admin/edit/{id}', 'GarageregisterController@admin_edit');
+Route::get('garageregisters/admin/update_status/{id}/{statusid}', 'GarageregisterController@admin_edit_re');
 
 //------------------------------------------------//
 

@@ -51074,7 +51074,23 @@ var render = function() {
                 _vm._m(0),
                 _vm._v(" "),
                 _c("div", { staticClass: "modal-body" }, [
-                  _vm._m(1),
+                  _c(
+                    "div",
+                    { staticClass: "w-100 d-flex justify-content-center" },
+                    [
+                      _c("h4", [
+                        _c("span", { staticClass: "badge badge-secondary" }, [
+                          _vm._v("ID")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "list-inline-item text-muted" },
+                          [_vm._v(_vm._s(this.listid))]
+                        )
+                      ])
+                    ]
+                  ),
                   _vm._v(" "),
                   _c("input", {
                     directives: [
@@ -51215,20 +51231,6 @@ var staticRenderFns = [
         },
         [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
       )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-100 d-flex justify-content-center" }, [
-      _c("h4", [
-        _c("span", { staticClass: "badge badge-secondary" }, [_vm._v("ID")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "list-inline-item text-muted" }, [
-          _vm._v("121")
-        ])
-      ])
     ])
   }
 ]

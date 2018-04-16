@@ -22,7 +22,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="w-100 d-flex justify-content-center">
-                            <h4><span class="badge badge-secondary">ID</span> <div class="list-inline-item text-muted">121</div></h4>
+                            <h4><span class="badge badge-secondary">ID</span> <div class="list-inline-item text-muted">{{this.listid}}</div></h4>
                         </div>
                         <input type="text" class="form-control mt-3" placeholder="Description" aria-label="Description" v-model="des" aria-describedby="basic-addon1">
                         <input type="text" class="form-control mt-3" placeholder="Latitude" aria-label="Latitude" v-model="lat" aria-describedby="basic-addon1">
