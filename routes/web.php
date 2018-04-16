@@ -16,8 +16,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('login', 'LoginController@index')->name('login');;
-
+Route::get('login', 'LoginController@index')->name('login');
+Route::get('login/{id}', 'LoginController@indexbyid');
+Route::get('home', 'HomeController@index')->name('home');
 
 //-------------------------------------//
 Route::get('go/{i}', function($i){

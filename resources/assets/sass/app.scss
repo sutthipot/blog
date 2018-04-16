@@ -12,6 +12,10 @@
 $fa-font-path: "../fonts";
 @import '~font-awesome/scss/font-awesome.scss';
 
+//sweetalert2
+@import '~sweetalert2/src/sweetalert2.scss';
+
+
 // bootstrap
 //@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
@@ -24,4 +28,8 @@ $fa-font-path: "../fonts";
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.hover:hover{
+  opacity: 0.5;
+  cursor: pointer;
 }

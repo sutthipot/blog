@@ -26,7 +26,12 @@ class LoginController extends Controller
     }
 
     public function index(){
-        return view('login');
+        return view('index');
+    }
+
+    public function indexbyid($id)
+    {
+        return view('index',['id'=>$id]);
     }
 
 }

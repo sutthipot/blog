@@ -6,8 +6,11 @@
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
-<link href="css/app.css" rel="stylesheet">
-<link href="css/fontawesome.all.css" rel="stylesheet">
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<link href="{{ asset('css/fontawesome.all.css') }}" rel="stylesheet">
+<link href="{{ asset('css/sweetalert2.css') }}" rel="stylesheet">
+
+<script src="{{ asset('js/sweetalert2.min.js') }}"></script>
 
 <!----
 <link href="{{ asset('css/bootstrap/bootstrap.min.css')}}" rel="stylesheet">

@@ -13,7 +13,12 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('login/{user}','LoginsController@login');
+Route::post('login','LoginsController@login');
+//Route::get('login','LoginsController@login');
+Route::get('garageregisters/admin/list/{statusid}', 'GarageregisterController@admin_list');
+Route::post('garageregisters/admin/edit/{id}', 'GarageregisterController@admin_edit');
+
+//------------------------------------------------//
 
 Route::get('products', 'ProductsController@index');
 
